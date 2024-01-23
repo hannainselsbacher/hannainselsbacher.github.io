@@ -1,11 +1,71 @@
 body {
-    background-color: #1f1f1f; 
+    background-image: linear-gradient(black, #081335); 
+    background-attachment: fixed; 
 }
 
 h1 {
-    color: #007ACA; 
+    color: #4d99cc;
+    font-size:350%; 
+    text-align: center; 
+}
+
+h2 {
+    color: white; 
 }
 
 p {
-    color: white; 
+    color: #4d99cc; 
 }
+
+p:hover {
+    color: rgb(140, 199, 226); 
+}
+
+img {
+    opacity: 0.4; 
+}
+
+img:hover {
+    opacity: 1; 
+}
+
+.inverted {
+    filter: invert(1); 
+}
+
+.headline {
+    width: 250px;
+    height: 50px; 
+    align-items: center; 
+    position: relative; 
+    animation-name: headline; 
+    animation-duration: 4s; 
+    animation-fill-mode: forwards;
+}
+
+@keyframes headline {
+    from {top: 0px; }
+    to {top: 70px; }
+}
+
+.center {
+    margin: auto;
+    padding: 10px; 
+    text-align: center;  
+}
+/*
+.stars {
+    width: 20px; 
+    height: 20px; 
+    position: relative; 
+    animation-name: stars; 
+    animation-duration: 5s;
+    animation-fill-mode: forwards; 
+    animation-iteration-count: infinite;
+}
+
+@keyframes stars {
+    from {top: 1000px; }
+    to {top: 0px; }
+}
+*/
