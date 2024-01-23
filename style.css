@@ -1,15 +1,29 @@
 body {
-    background-image: linear-gradient(black, #081335); 
+    background-image: linear-gradient(black, rgb(18, 9, 44)); 
     background-attachment: fixed; 
 }
 
+a {
+    color: #4d99cc; 
+    text-decoration: none;
+    font-size: 18px;  
+}
+
+a:hover {
+    color: white; 
+}
+
 h1 {
-    color: #4d99cc;
-    font-size:350%; 
-    text-align: center; 
+    color: white;
+    font-size:100%; 
+    text-align: left;  
 }
 
 h2 {
+    color: white; 
+}
+
+h4 {
     color: white; 
 }
 
@@ -33,19 +47,54 @@ img:hover {
     filter: invert(1); 
 }
 
-.headline {
-    width: 250px;
-    height: 50px; 
-    align-items: center; 
-    position: relative; 
-    animation-name: headline; 
-    animation-duration: 4s; 
-    animation-fill-mode: forwards;
+.wide {
+    width: 400px; 
+    height: 50px;
+    color: #4d99cc; 
+    text-indent: 20px;  
+     
+} 
+
+.list {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
 }
 
-@keyframes headline {
-    from {top: 0px; }
-    to {top: 70px; }
+.wide:hover {
+    color: white; 
+    font-size: 20px; 
+}
+
+.headline {
+    width: 50px;
+    height: 50px; 
+    align-items: center; 
+    position: relative;  
+}
+
+.headline:hover {
+    animation-name: grow;
+    animation-duration: 5s;  
+}
+
+/*ROTATION OF THE LOGO*/
+.rotate {
+    border-style: solid; 
+    border-width: 1px; 
+    display: block; 
+    width: 30px; 
+    height: 30px; 
+    background-color: #4d99cc; 
+    color: black; 
+    transition: width 2s, height, 2s, background-color 2s, rotate 2s;  
+}
+.rotate:hover {
+    background-color: rgb(230, 103, 235); 
+    width: 100px; 
+    height: 100px; 
+    rotate: 180deg;
+    animation-name: grow;  
 }
 
 .center {
@@ -53,19 +102,328 @@ img:hover {
     padding: 10px; 
     text-align: center;  
 }
-/*
-.stars {
-    width: 20px; 
-    height: 20px; 
-    position: relative; 
-    animation-name: stars; 
-    animation-duration: 5s;
-    animation-fill-mode: forwards; 
-    animation-iteration-count: infinite;
+
+@keyframes grow {
+    50% {font-size: 40px; }
 }
 
-@keyframes stars {
-    from {top: 1000px; }
-    to {top: 0px; }
+@keyframes headline {
+    from {margin-left: 100%; width: 300%; }
+    to {margin-left: 0%; width: 100%}
 }
-*/
+
+
+.circle {
+    position: absolute; 
+  
+ -webkit-animation: myOrbit 15s linear infinite; 
+       -moz-animation: myOrbit 15s linear infinite; 
+         -o-animation: myOrbit 15s linear infinite; 
+            animation: myOrbit 15s linear infinite; 
+}
+
+@-webkit-keyframes myOrbit {
+    from { -webkit-transform: rotate(0deg) translateX(800px) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(800px) rotate(-360deg); }
+}
+
+@-moz-keyframes myOrbit {
+    from { -moz-transform: rotate(0deg) translateX(800px) rotate(0deg); }
+    to   { -moz-transform: rotate(360deg) translateX(800px) rotate(-360deg); }
+}
+
+@-o-keyframes myOrbit {
+    from { -o-transform: rotate(0deg) translateX(800px) rotate(0deg); }
+    to   { -o-transform: rotate(360deg) translateX(800px) rotate(-360deg); }
+}
+
+@keyframes myOrbit {
+    from { transform: rotate(0deg) translateX(800px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(800px) rotate(-360deg); }
+}
+
+.a0 {
+    left: 115px; 
+    top: 143px; 
+}
+
+.a1 {
+    left: 10px; 
+    top: 59px; 
+}
+
+.a2 {
+    left: 0px; 
+    top: 0px; 
+}
+
+
+.a3 {
+    left: 10px; 
+    top: 300px; 
+}
+
+
+.a4 {
+    left: 0px; 
+    top: 59px; 
+}
+
+
+.a5 {
+    left: 200px; 
+    top: 9px; 
+}
+
+.a6 {
+    left: 179px; 
+    top: 59px; 
+}
+
+.a7 {
+    left: 289px; 
+    top: 100px; 
+}
+
+.a8 {
+    left: 10px; 
+    top: 509px; 
+}
+
+.a9 {
+    left: 320px; 
+    top: 0px; 
+}
+
+.circles {
+    position: absolute; 
+  
+ -webkit-animation: myOrbits 15s linear infinite; 
+       -moz-animation: myOrbits 15s linear infinite; 
+         -o-animation: myOrbits 15s linear infinite; 
+            animation: myOrbits 15s linear infinite; 
+}
+
+@-webkit-keyframes myOrbits {
+    from  { -webkit-transform: rotate(360deg) translateX(500px) rotate(-360deg); }
+    to { -webkit-transform: rotate(0deg) translateX(500px) rotate(0deg); }
+}
+
+@-moz-keyframes myOrbits {
+    from  { -webkit-transform: rotate(360deg) translateX(500px) rotate(-360deg); }
+    to { -webkit-transform: rotate(0deg) translateX(500px) rotate(0deg); }
+}
+
+@-o-keyframes myOrbits {
+    from  { -webkit-transform: rotate(360deg) translateX(500px) rotate(-360deg); }
+    to { -webkit-transform: rotate(0deg) translateX(500px) rotate(0deg); }
+}
+
+@keyframes myOrbits {
+    from  { -webkit-transform: rotate(360deg) translateX(500px) rotate(-360deg); }
+    to { -webkit-transform: rotate(0deg) translateX(500px) rotate(0deg); }
+}
+
+.b0 {
+    left: 145px; 
+    top: 143px; 
+}
+
+.b1 {
+    left: 10px; 
+    top: 59px; 
+}
+
+.b2 {
+    left: 80px; 
+    top: 80px; 
+}
+
+
+.b3 {
+    left: 90px; 
+    top: 300px; 
+}
+
+
+.b4 {
+    left: 0px; 
+    top: 510px; 
+}
+
+
+.b5 {
+    left: 270px; 
+    top: 9px; 
+}
+
+.b6 {
+    left: 169px; 
+    top: 590px; 
+}
+
+.b7 {
+    left: 289px; 
+    top: 107px; 
+}
+
+.b8 {
+    left: 89px; 
+    top: 539px; 
+}
+
+.b9 {
+    left: 32px; 
+    top: 10px; 
+}
+
+
+.circless {
+    position: absolute; 
+  
+ -webkit-animation: myOrbit 15s linear infinite; 
+       -moz-animation: myOrbit 15s linear infinite; 
+         -o-animation: myOrbit 15s linear infinite; 
+            animation: myOrbit 15s linear infinite; 
+}
+
+
+.c0 {
+    left: 600px; 
+    top: 600px; 
+}
+
+.c1 {
+    left: 1000px; 
+    top: 589px; 
+}
+
+.c2 {
+    left: 700px; 
+    top: 800px; 
+}
+
+
+.c3 {
+    left: 700px; 
+    top: 800px; 
+}
+
+
+.c4 {
+    left: 9px; 
+    top: 510px; 
+}
+
+
+.c5 {
+    left: 799px; 
+    top: 781px; 
+}
+
+.c6 {
+    left: 654px; 
+    top: 590px; 
+}
+
+.c7 {
+    left: 989px; 
+    top: 977px; 
+}
+
+.c8 {
+    left: 764px; 
+    top: 939px; 
+}
+
+.c9 {
+    left: 732px; 
+    top: 1010px; 
+}
+
+
+@-webkit-keyframes myOrbiti {
+    from  { -webkit-transform: rotate(360deg) translateX(800px) rotate(-360deg); }
+    to { -webkit-transform: rotate(0deg) translateX(800px) rotate(0deg); }
+}
+
+@-moz-keyframes myOrbiti {
+    from  { -webkit-transform: rotate(360deg) translateX(800px) rotate(-360deg); }
+    to { -webkit-transform: rotate(0deg) translateX(800px) rotate(0deg); }
+}
+
+@-o-keyframes myOrbiti {
+    from  { -webkit-transform: rotate(360deg) translateX(800px) rotate(-360deg); }
+    to { -webkit-transform: rotate(0deg) translateX(800px) rotate(0deg); }
+}
+
+@keyframes myOrbiti {
+    from  { -webkit-transform: rotate(360deg) translateX(800px) rotate(-360deg); }
+    to { -webkit-transform: rotate(0deg) translateX(800px) rotate(0deg); }
+}
+
+
+.circlesi {
+    position: absolute; 
+  
+ -webkit-animation: myOrbiti 15s linear infinite; 
+       -moz-animation: myOrbiti 15s linear infinite; 
+         -o-animation: myOrbiti 15s linear infinite; 
+            animation: myOrbiti 15s linear infinite; 
+}
+
+
+
+.d0 {
+    left: 690px; 
+    top: 600px; 
+}
+
+.d1 {
+    left: 1010px; 
+    top: 509px; 
+}
+
+.d2 {
+    left: 800px; 
+    top: 890px; 
+}
+
+
+.d3 {
+    left: 780px; 
+    top: 500px; 
+}
+
+
+.d4 {
+    left: 999px; 
+    top: 510px; 
+}
+
+
+.d5 {
+    left: 799px; 
+    top: 701px; 
+}
+
+.d6 {
+    left: 854px; 
+    top: 590px; 
+}
+
+.d7 {
+    left: 989px; 
+    top: 177px; 
+}
+
+.d8 {
+    left: 764px; 
+    top: 539px; 
+}
+
+.d9 {
+    left: 832px; 
+    top: 1010px; 
+}
+
