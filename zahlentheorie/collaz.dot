@@ -1,0 +1,22 @@
+strict digraph { 
+  3 -> 10 [color=red];
+  10 -> 5 [color=red];
+  5 -> 16 [color=red];
+  16 -> 8 [color=red];
+  8 -> 4 [color=red];
+  4 -> 2 [color=red];
+  2 -> 1 [color=red];
+
+  7 -> 22 [color=orange]
+  22 -> 11 [color=orange]
+  11 -> 34 [color=orange]
+  34 -> 17 [color=orange]
+  17 -> 52 [color=orange]
+  52 -> 26 [color=orange]
+  26 -> 13 [color=orange]
+  13 -> 40 [color=orange]
+  40 -> 5 
+
+} 
+
+
