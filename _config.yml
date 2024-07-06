@@ -1,0 +1,20 @@
+collections:
+  maths:
+    output: true
+
+
+defaults:
+  - scope:
+      path: ""
+      type: "maths"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"

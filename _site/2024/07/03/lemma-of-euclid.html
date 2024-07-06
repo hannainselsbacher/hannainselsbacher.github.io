@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lemma of euclid</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  </head>
+  <body>
+    <!--<nav>
+  
+    <a href="/" >
+      Home
+    </a>
+  
+    <a href="/about.html" >
+      About
+    </a>
+  
+    <a href="/maths.html" >
+      Maths
+    </a>
+  
+    <a href="/programming.html" >
+      Programming
+    </a>
+  
+</nav>--> 
+
+<div class="topnav">
+  <a class="active" href="/">Home</a>
+  <a href="/about.html">About</a>
+  <a href="/maths.html">Maths</a>
+  <a href="/programming.html">Programming</a>
+</div>
+
+<div class="bigdiv"> 
+    <h1>Lemma of euclid</h1>
+<!--<p>03 Jul 2024 - H.I.</p>--> 
+
+<p>If a prime p divides the product of the integers ab, then it must divide at least one factor.</p>
+
+<h2 id="claim">Claim</h2>
+
+\[p \in \mathbb{P}; \; a, b \in \mathbb{Z}: p \mid ab \implies p \mid a \; \lor \; p \mid b \;\;\;\;\;\;\;\; \;\;\;\;\;\;\;\; \;\;\;\;\;\;\;\;\]
+
+<h2 id="proof">Proof</h2>
+
+<p>Suppose \(p \mid ab \land p \nmid a\). We have to show, that p divides b.<br /></p>
+
+<p>\(\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;  \;\;\;\;\;\;\;\;\;\;\;\;  p \mid ab \;\; \Leftrightarrow \;\; p \cdot x = ab , \;\; x \in \mathbb{Z}
+\;\;\;\;\;\;\) 
+<br /><br />
+Since p does not divide a, it follows from Bézout’s Lemma: <br /><br /> 
+\(\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;s \cdot p + t \cdot a = 1\)
+<br /><br />
+Now we multiply by b: <br /><br />
+\(\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; b \cdot s \cdot p + (a \cdot b) \cdot t = b\)
+<br /><br />
+Then we can substitute \(a \cdot b\) by \(p \cdot x\): <br /><br />
+\(\;\;\;\;\;\;\;\;\;\;\;\;\;\; \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; b \cdot s \cdot p + p \cdot x \cdot t = b = p \cdot (b \cdot s + x \cdot t)\) 
+<br /><br />
+That means that p actually divides b.</p>
+
+</div>
+  </body>
+</html>

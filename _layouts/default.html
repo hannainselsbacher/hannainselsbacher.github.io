@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  </head>
+  <body>
+    <!--{% include navigation.html%}--> 
+
+<div class="topnav">
+  <a class="active" href="/">Home</a>
+  <a href="/about.html">About</a>
+  <a href="/maths.html">Maths</a>
+  <a href="/programming.html">Programming</a>
+</div>
+
+<div class="bigdiv"> 
+    {{ content }}
+</div>
+  </body>
+</html>
