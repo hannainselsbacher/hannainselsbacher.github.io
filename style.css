@@ -1,0 +1,281 @@
+
+
+html, body {
+    margin: 0; 
+    padding: 0; 
+    height: 100%; 
+    background-color: white;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow-x: hidden;
+  
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+  scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;
+}
+
+
+body::-webkit-scrollbar {
+  display: none; 
+  width: 0px;                /* Scrollbar wird komplett unsichtbar */
+  background: transparent;                /* Chrome, Safari, Edge */
+}
+
+
+main {
+  flex: 1;
+  overflow-y: auto;
+  padding: 80px 20px 20px 50px; /* oben: etwas größer als Topnav-Höhe */
+  max-width: 1200px;
+  width: 100%; 
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+/*
+main {
+  flex: 1; 
+  font-size: 20px;
+  margin-left: 30px; 
+  width: 90%; 
+}*/
+
+p {
+  margin-left: 30px; 
+}
+
+a {
+    text-decoration: none;
+    color: white; 
+    font-size: 30px; 
+}
+
+
+h1 {
+  position: relative;  
+  left: 30px;
+}
+
+.indent {
+  position: relative; 
+  left: 30px; 
+}
+
+div {
+    margin: 0; 
+}
+
+.topnavprev {
+  overflow: hidden;
+  margin: 0;
+  background-color: #161617;
+  position: fixed; 
+}
+
+
+.topnav{
+  position: fixed;      /* immer oben */
+  top: 0;
+  left: 0;
+  width: 100%;          /* volle Breite */
+  height: 60px; 
+  background-color: #161617;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  z-index: 1000;        /* oben halten */
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.logos{
+  height: auto; 
+  position: absolute; 
+  right: 2%; 
+}
+
+.topnav a {
+  margin: 0; 
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.center {
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 50%; 
+}
+
+.portrait{
+  display: block; 
+  height: 100px; 
+  width: auto; 
+}
+
+.dark-mode {
+  background-color: black; 
+  color: white; 
+}
+
+.theme-button {
+  position: fixed;
+  top: 16px;  
+  right: 30px; 
+}
+
+.flex-container {
+    position: relative;
+    top: 10px; 
+    margin-top: 10px; 
+    margin-bottom: 10px;
+    margin: auto; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    width: 80%;
+    min-height: 100px; 
+    height: 100%; 
+    left: 2%; 
+}
+
+.wrapper {
+    width: 95px; 
+    font-size: 15px;
+    margin-left: 20px; 
+    margin-right: 20px; 
+    margin-top: 50px; 
+    margin-bottom: 50px;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black; 
+    
+}
+
+.item {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 24%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+
+.github {
+    background-image: url('./pages/pictures/icons8-github.svg'); 
+    background-size: 110%;
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-color: white; 
+
+}
+
+.discord {
+    background-image: url('./pages/pictures/discord.svg'); 
+    background-size: 70%;
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-color: white; 
+
+}
+
+
+.tutorpage {
+  position: relative;
+  top: 10px; 
+  margin-top: 10px; 
+  margin-bottom: 10px;
+  margin: auto; 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  border-radius: 25px;
+  border: 2px solid black; 
+  padding: 20px;
+  width: 90%;
+  max-width: 1000px;
+  height: 150px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+              rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+              rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.container {
+  display: flex;
+  align-items: center;      /* vertically center */
+  border: 2px solid black;  /* outer border */
+  padding: 20px;
+  border-radius: 25px; 
+  gap: 20px;    
+  width: 100%; 
+  /*margin-left: 30px; */
+  max-width: 1000px;            /* space between image & text */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+              rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+              rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.image img {
+  width: 200px;      /* adjust size */
+  height: auto;
+  display: block;
+}
+
+.text {
+  flex: 1;           /* text takes remaining space */
+}
+
+
+.impressum{
+  background-color: #161617;
+  color: #f2f2f2; 
+  padding: 40px; 
+  flex-shrink: 0;
+  height: 100px; 
+}
+
+
+.prices-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 250px); /* 4 Boxen, jede 200px breit */
+  grid-auto-rows: 400px;                  /* jede Box 400px hoch */
+  gap: 20px;                              /* Abstand zwischen Boxen */
+  justify-content: center;                 /* zentriert das ganze Grid horizontal */
+  margin: 30px auto;
+}
+
+.price-box {
+  border: 2px solid black;
+  border-radius: 25px;
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* horizontal zentrieren */
+  justify-content: center;  /* vertikal zentrieren */
+  text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+              rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+              rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.price-box h2 {
+  margin-bottom: 20px;
+}
+
+.price-box p {
+  font-size: 18px;
+}
